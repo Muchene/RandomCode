@@ -1,0 +1,7 @@
+
+Implementation of a simple motion planner. The planner works by growing a tree in the following manner
+Choses a random state in the state space, choose a random state in the tree, if 
+we can make a motion from the tree state to the random state add the random state into the tree. With some
+small probability we will sample the goal state and check whether we can make the transition. If we can, the solution
+is found and we can backtrack to produce a path. This is a very dumb planner and is just meant to explore OMPL
+
